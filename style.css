@@ -309,13 +309,13 @@
     margin-top: 10px;
     color: #112433;
 }
-.Product1 ul{
+.variants{
     display: flex;
     justify-content: space-around;
     width: 46%;
     margin: auto;
 }
-.Product1 ul li{
+.variant{
     color: #7b8e9d;
     margin-bottom: 0;
     margin-top: 78px;
@@ -325,16 +325,23 @@
     border-left: 2px solid;
     padding-left: 24px;
 }
-.Product1 ul li:first-child{
+.variants li{
+    cursor: pointer;
+}
+.variants li:nth-child(1){
     border: none;
+}
+.variant1{
     color: #408858;
     position: relative;
 }
-.Product1 ul li:first-child::after{
+.variant1::after{
     content: url('http://ecoharvest.farm/img/shape/1.png');
     position: absolute;
     top: 20px;
     left: 12px;
+    text-align: center;
+    width: 100%;
 }
 .Product2{
     width: 89%;
@@ -676,4 +683,8 @@
     color: #fab522;
 }
 
-    
+/*JS*/
+.Pligreen{
+    color: #408858 !important;
+    position: relative;
+}
